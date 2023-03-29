@@ -1,0 +1,34 @@
+modLoader="kotlinforforge" #mandatory
+loaderVersion="[3,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+license="MPL2.0"
+issueTrackerURL="https://github.com/Waterpicker/Cobblemon-SidemodTemplate"
+
+[[mods]] #mandatory
+modId="examplemod" #mandatory
+version="${version}" #mandatory
+displayName="ExampleMod" #mandatory
+credits="Thanks to the Cobblemon Community. Xwaffle for his cobbled together CobblemonExtra's project that was used as the base."
+authors="Waterpicker, XWaffle"
+description='''
+Cobblemon Kotlin Sidemod Template
+'''
+
+# A URL for the "homepage" for this mod, displayed in the mod UI
+#displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
+# A URL to query for updates for this mod. See the JSON update specification https://mcforge.readthedocs.io/en/latest/gettingstarted/autoupdate/
+#updateJSONURL="https://change.me.example.invalid/updates.json" #optional
+
+[[dependencies.examplemod]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.19.2]"
+
+[[dependencies.examplemod]]
+modId="forge" #mandatory
+mandatory=true #mandatory
+versionRange="[40,)" #mandatory
+
+[[dependencies.examplemod]]
+modId="architectury"
+mandatory=true
+versionRange="[6.5.69,)"
